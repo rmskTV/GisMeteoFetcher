@@ -54,7 +54,7 @@ class WeatherController extends Controller
             if (str_ends_with($key, '_temp_c') && is_numeric($value)) {
                 $formattedValue = round($value, 1);
                 $formattedValue = ($formattedValue > 0) ? '+'.$formattedValue : $formattedValue;
-                $displayValue = $formattedValue.'°C';
+                $displayValue = $formattedValue.'°';
                 $tempClass = 'temperature';
             } else {
                 $displayValue = is_array($value) ? json_encode($value) : $value;
