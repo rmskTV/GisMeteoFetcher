@@ -1,4 +1,4 @@
-name: gisMeteoFetcher
+#name: gisMeteoFetcher
 services:
     laravel.test:
         build:
